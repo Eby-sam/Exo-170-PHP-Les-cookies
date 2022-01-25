@@ -5,7 +5,7 @@
  * 2. Affichez la valeur de ce cookie avec un simple echo.
  */
 // TODO Votre code ici.
-
+setcookie('username','samuel',time() + 3600,'/', 'localhost', true,true);
 
 
 /**
@@ -14,3 +14,6 @@
  * 5. Créez une page bio.php et tentez d'afficher le cookie username sur cette page.
  */
 // TODO Votre code ici.
+setcookie('username2','sam',time() + 3600 * 48 + 3600 * 2,'/', 'localhost', true,true);
+$newName = $_COOKIE['username'];
+echo $newName;
